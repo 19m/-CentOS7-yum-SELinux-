@@ -1,6 +1,7 @@
 # CentOS7-SELinux-
 脚本 | CentOS7一键配置yum源、永久关闭防火墙及SELinux等
 
+```
 #!/bin/bash
 yum install -y wget vim
 mv /etc/yum.repos.d/CentOS-Base.repo /etc/yum.repos.d/CentOS-Base.repo.backup
@@ -19,6 +20,7 @@ systemctl enable ntpd
 yum install bash-completion -y
 yum update -y  && yum upgrade -y
 reboot
+```
 
 
 来源：https://naiyu.club/109.html
